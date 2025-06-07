@@ -1,0 +1,131 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #005b96;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #005b96;
+}
+
+h1 {
+    color: white;
+}
+
+/* Section Styles */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #005b96;
+    background-color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/* Color Swatch Styles */
+.color-swatch {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.primary {
+    background-color: #005b96;
+}
+
+.text {
+    background-color: #333333;
+    color: white;
+}
+
+.background {
+    background-color: #e1f0fa;
+    color: #333;
+}
+
+.accent {
+    background-color: #0083b3;
+}
+
+/* Typography Examples */
+.montserrat-example {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.roboto-example {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Wireframe Styles */
+.wireframe {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    border: 1px dashed #999;
+    margin: 10px 0;
+}
+
+.wireframe-grid {
+    display: flex;
+    margin: 15px 0;
+}
+
+.wireframe-main {
+    width: 70%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    margin-right: 10px;
+}
+
+.wireframe-sidebar {
+    width: 30%;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .wireframe-grid {
+        flex-direction: column;
+    }
+    
+    .wireframe-main,
+    .wireframe-sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
