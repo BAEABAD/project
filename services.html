@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | SIMIQ</title>
+    <meta name="description" content="Professional calibration services for industrial measurement instruments">
+    <meta name="author" content="Aka Blehoue Aime Daniel">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/simiq1.png" alt="SIMIQ Logo" width="150" height="60" loading="lazy">
+                <h1></h1>
+                <p>Société de Métrologie Industrielle et de Qualité</p>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                    <span class="sr-only">Menu</span>
+                </button>
+                <ul id="primary-navigation" data-visible="false">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="portal-link">Customer Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Our Calibration Services</h1>
+            <p>Accredited calibration services meeting international standards</p>
+        </section>
+
+        <section class="service-details">
+            <div class="service-tabs">
+                <button class="tab-btn active" data-tab="temperature">Temperature</button>
+                <button class="tab-btn" data-tab="pressure">Pressure</button>
+                <button class="tab-btn" data-tab="electrical">Electrical</button>
+                <button class="tab-btn" data-tab="dimensional">Dimensional</button>
+            </div>
+
+            <div class="tab-content active" id="temperature">
+                <h2>Temperature Calibration Services</h2>
+                <p>We provide comprehensive calibration services for all types of temperature measurement devices:</p>
+                <ul>
+                    <li>Thermocouples and RTDs</li>
+                    <li>Infrared thermometers</li>
+                    <li>Temperature controllers</li>
+                    <li>Thermal cameras</li>
+                    <li>Temperature data loggers</li>
+                </ul>
+                <div class="service-calculator">
+                    <h3>Estimate Your Calibration</h3>
+                    <form id="temp-calculator">
+                        <div class="form-group">
+                            <label for="temp-device">Device Type:</label>
+                            <select id="temp-device" required>
+                                <option value="">Select device</option>
+                                <option value="thermocouple">Thermocouple</option>
+                                <option value="rtd">RTD</option>
+                                <option value="ir">Infrared Thermometer</option>
+                                <option value="controller">Temperature Controller</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="temp-quantity">Quantity:</label>
+                            <input type="number" id="temp-quantity" min="1" value="1" required>
+                        </div>
+                        <button type="submit" class="cta-button secondary">Calculate</button>
+                    </form>
+                    <div id="temp-result" class="hidden"></div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="pressure">
+                <h2>Pressure Calibration Services</h2>
+                <p>Precision calibration for pressure measurement across various ranges and media:</p>
+                <ul>
+                    <li>Pressure gauges and transmitters</li>
+                    <li>Barometers</li>
+                    <li>Pressure switches</li>
+                    <li>Deadweight testers</li>
+                    <li>Pressure calibrators</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="electrical">
+                <h2>Electrical Calibration Services</h2>
+                <p>Comprehensive calibration for electrical measurement instruments:</p>
+                <ul>
+                    <li>Multimeters (digital and analog)</li>
+                    <li>Oscilloscopes</li>
+                    <li>Clamp meters</li>
+                    <li>Electrical safety testers</li>
+                    <li>Power analyzers</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="dimensional">
+                <h2>Dimensional Calibration Services</h2>
+                <p>Precision measurement for dimensional instruments:</p>
+                <ul>
+                    <li>Calipers and micrometers</li>
+                    <li>Height gauges</li>
+                    <li>Dial indicators</li>
+                    <li>Gauge blocks</li>
+                    <li>Optical comparators</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="certification-info">
+            <h2>Our Certification Process</h2>
+            <p>All calibrations are performed according to ISO/IEC 17025 standards and include:</p>
+            <ul>
+                <li>Full traceability to national standards</li>
+                <li>Detailed calibration certificates</li>
+                <li>Measurement uncertainty analysis</li>
+                <li>Compliance with your industry requirements</li>
+            </ul>
+            <a href="contact.html" class="cta-button">Request Service</a>
+        </section>
+    </main>
+
+   <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>SIMIQ</h3>
+            <p>Precision measurement solutions for industry</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Info</h4>
+            <address>
+                ABIDJAN TREICHVILLE BOULEVARD NANA YAMOUSSO<br>
+                RUE 38 AVENUE 10<br>
+                Cel : +225 0596172763 , RCCM : n°CI-ABJ03-2023-B12-07204<br>
+                Email: simiq.sarl@gmail.com
+            </address>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="currentyear"></span> SIMIQ. Aka Blehoue Aime Daniel. Côte d'Ivoire. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
+
+    <div id="portal-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Customer Portal Login</h2>
+            <form id="portal-login">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="cta-button">Login</button>
+            </form>
+            <div id="portal-message" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="scriptes/main.js"></script>
+</body>
+</html>

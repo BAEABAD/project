@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SIMIQ</title>
+    <meta name="description" content="Professional calibration services for industrial measurement instruments">
+    <meta name="author" content="Aka Blehoue Aime Daniel">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/simiq1.png" alt="SIMIQ Logo" width="150" height="60" loading="lazy">
+                <h1></h1>
+                <p>Société de Métrologie Industrielle et de Qualité</p>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                    <span class="sr-only">Menu</span>
+                </button>
+                <ul id="primary-navigation" data-visible="false">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="#" id="portal-link">Customer Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Contact SIMIQ</h1>
+            <p>Get in touch with our team for calibration services and support</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company:</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Needed:</label>
+                        <select id="service" name="service">
+                            <option value="">Select service</option>
+                            <option value="temperature">Temperature Calibration</option>
+                            <option value="pressure">Pressure Calibration</option>
+                            <option value="electrical">Electrical Calibration</option>
+                            <option value="dimensional">Dimensional Calibration</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+                <div id="form-success" class="hidden">
+                    <h3>Thank You!</h3>
+                    <p>Your message has been sent. We'll respond as soon as possible.</p>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <address>
+                    <strong>SIMIQ Headquarters</strong><br>
+                    ABIDJAN TREICHVILLE BOULEVARD NANA YAMOUSSO<br>
+                    RUE 38 AVENUE 10<br>
+                    ivory coast
+                </address>
+                <div class="contact-methods">
+                    <p><strong>Phone:</strong> +225 0596172763</p>
+                    <p><strong>Email:</strong> simiq.sarl@gmail.com</p>
+                    <p><strong>Business Hours:</strong> Mon-Fri, 8:00 AM - 5:00 PM</p>
+                </div>
+                <div class="emergency-contact">
+                    <h3>Emergency After-Hours Support</h3>
+                    <p>For urgent calibration needs outside business hours:</p>
+                    <p><strong>Emergency Phone:</strong> +225 0596172763</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-map">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <!-- Embedded map would go here -->
+                <img src="images/map-placeholder.jpg" alt="SIMIQ Location Map" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>SIMIQ</h3>
+            <p>Precision measurement solutions for industry</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Info</h4>
+            <address>
+                ABIDJAN TREICHVILLE BOULEVARD NANA YAMOUSSO<br>
+                RUE 38 AVENUE 10<br>
+                Cel : +225 0596172763 , RCCM : n°CI-ABJ03-2023-B12-07204<br>
+                Email: simiq.sarl@gmail.com
+            </address>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="currentyear"></span> SIMIQ. Aka Blehoue Aime Daniel. Côte d'Ivoire. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
+
+    <div id="portal-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Customer Portal Login</h2>
+            <form id="portal-login">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="cta-button">Login</button>
+            </form>
+            <div id="portal-message" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="scriptes/main.js"></script>
+</body>
+</html>

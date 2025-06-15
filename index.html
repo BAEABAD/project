@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simiq - Industrial Metrology & Quality </title>
+    <meta name="description" content="Professional calibration services for industrial measurement instruments">
+    <meta name="author" content="Aka Blehoue Aime Daniel">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/simiq1.png" alt="SIMIQ Logo" width="150" height="60" loading="lazy">
+                <h1></h1>
+                <p>Société de Métrologie Industrielle et de Qualité</p>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                    <span class="sr-only">Menu</span>
+                </button>
+                <ul id="primary-navigation" data-visible="false">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="portal-link">Customer Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Precision Measurement Solutions</h2>
+                <p>Accredited calibration services for industries requiring the highest standards of measurement accuracy</p>
+                <a href="services.html" class="cta-button">Our Services</a>
+            </div>
+        </section>
+
+        <section class="services-overview">
+            <h2>Our Core Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Temperature Calibration</h3>
+                    <p>From thermocouples to infrared thermometers, we ensure your temperature measurements are accurate.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Pressure Calibration</h3>
+                    <p>Precision calibration for all pressure measurement devices across various ranges.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Electrical Calibration</h3>
+                    <p>Comprehensive calibration services for multimeters, oscilloscopes, and more.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Company Image Section -->
+        <section class="company-showcase">
+            <div class="company-content">
+                <div class="company-text">
+                    <h2>Our Equipment</h2>
+                    <p>Since 1995, SIMIQ has been providing top-tier metrology services from our state-of-the-art facility in Metrology City. Our 10,000 sq ft laboratory is equipped with the most precise measurement equipment available.</p>
+                    <ul class="facility-features">
+                        <li>Climate-controlled calibration labs</li>
+                        <li>ISO 17025 accredited testing areas</li>
+                        <li>Secure client instrument storage</li>
+                        <li>On-site parking for easy drop-off</li>
+                    </ul>
+                </div>
+                <div class="company-image">
+                    <img src="images/simiq2.jpeg" alt="SIMIQ company facility" loading="lazy">
+                    <p class="image-caption">Our main calibration laboratory in Metrology City</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <h2>Our Accreditations</h2>
+            <div class="cert-badges">
+                <div class="cert-badge">
+                    <img src="images/iso-logo.png" alt="ISO 17025 Certified" loading="lazy">
+                    <p>ISO/IEC 17025 Accredited</p>
+                </div>
+                <div class="cert-badge">
+                    <img src="images/oiml-logo.png" alt="OIML Certified" loading="lazy">
+                    <p>OIML Certified</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-contact">
+            <h2>Need Immediate Assistance?</h2>
+            <p>Our technical team is ready to help with your calibration needs.</p>
+            <a href="contact.html" class="cta-button secondary">Contact Us</a>
+        </section>
+    </main>
+
+    <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>SIMIQ</h3>
+            <p>Precision measurement solutions for industry</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Info</h4>
+            <address>
+                ABIDJAN TREICHVILLE BOULEVARD NANA YAMOUSSO<br>
+                RUE 38 AVENUE 10<br>
+                Cel : +225 0596172763 , RCCM : n°CI-ABJ03-2023-B12-07204<br>
+                Email: simiq.sarl@gmail.com
+            </address>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="currentyear"></span> SIMIQ. Aka Blehoue Aime Daniel. Côte d'Ivoire. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
+
+    <div id="portal-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Customer Portal Login</h2>
+            <form id="portal-login">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="cta-button">Login</button>
+            </form>
+            <div id="portal-message" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="scriptes/main.js"></script>
+</body>
+</html>
